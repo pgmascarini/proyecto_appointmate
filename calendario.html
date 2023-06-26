@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+    <title>Calendario</title>
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 40px;
+        margin-top: -50px;
+      }
+      .atrasIcon {
+        margin-left: -25px;
+        width: 60px;
+        height: 35px;
+        padding: 5px;
+        background-color: #ff9800;
+        border-radius: 10px;
+        margin-top: 60px;
+      }
+      .tituloCalendario {
+        margin-top: 100px;
+        color: white;
+      }
+      #calendario1,
+      #calendario2 {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #3e3592;
+      }
+
+      @media (min-width: 800px) {
+        .atrasIcon {
+          margin-left: -200%;
+          width: 60px;
+          height: 35px;
+          padding: 5px;
+          background-color: #ff9800;
+          border-radius: 10px;
+          margin-top: 100px;
+        }
+        #calendario1 {
+          width: 1000px;
+          height: auto;
+        }
+        #calendario2 {
+          width: 1000px;
+          height: auto;
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #2f2c79">
+    <div class="calendarioCuerpo">
+      <header>
+        <a href="dashboard.html"
+          ><img class="atrasIcon" src="./medios/atrasicon.png" alt="BotonAtras"
+        /></a>
+        <h1 class="tituloCalendario">Calendario</h1>
+      </header>
+
+      <div class="cuerpo">
+        <div class="calendarioUno">
+          <div id="calendario1"></div>
+          <br />
+        </div>
+        <div class="calendarioDos">
+          <div id="calendario2"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+      $(document).ready(function () {
+        var fechaActual = moment(); // Obtén la fecha actual con Moment.js
+        var fechaSiguiente = moment().add(1, "months"); // Obtén la fecha del mes siguiente con Moment.js
+
+        $("#calendario1").fullCalendar({
+          defaultDate: fechaActual,
+          // Resto de las opciones y eventos del primer calendario
+        });
+
+        $("#calendario2").fullCalendar({
+          defaultDate: fechaSiguiente,
+          // Resto de las opciones y eventos del segundo calendario
+        });
+      });
+    </script>
+  </body>
+</html>

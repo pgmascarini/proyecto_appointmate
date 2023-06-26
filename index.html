@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>FomrLogin</title>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      form {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 400px;
+      }
+      input {
+        width: 300px;
+        height: 20px;
+        border-radius: 15px;
+        margin-top: 10px;
+        padding: 10px;
+        border: 2px solid gray;
+      }
+      .boton {
+        background-color: #2f2c79;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        height: 50px;
+        width: 325px;
+        border: none;
+        box-shadow: 0px 3px 5px 2px gray;
+      }
+      .rojo {
+        color: red;
+      }
+      img {
+        width: 300px;
+        margin-top: 100px;
+        align-self: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      .forgot {
+        margin-top: 10px;
+        text-align: right;
+        color: #2f2c79;
+        font-size: 15px;
+      }
+      span {
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bold;
+      }
+      @media (min-width: 800px) {
+        body {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: row;
+        }
+        .container {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          max-height: 20%;
+        }
+        form {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          margin-top: 200px;
+        }
+        input {
+          width: 400px;
+          height: 20px;
+          border-radius: 15px;
+          margin-top: 10px;
+          padding: 10px;
+          border: 2px solid gray;
+          align-self: center;
+        }
+        .boton {
+          background-color: #2f2c79;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px;
+          height: 50px;
+          width: 425px;
+
+          border: none;
+        }
+        img {
+          width: 810px;
+          align-self: center;
+          margin-top: 20px;
+        }
+        a {
+          text-decoration: none;
+        }
+        .forgot {
+          margin-top: 10px;
+          text-align: center;
+          margin-left: 25%;
+          color: #2f2c79;
+          font-size: 15px;
+        }
+        .rojo {
+          color: red;
+        }
+        span {
+          margin-top: 50px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./medios/LOGO-ANGULARAPP.png" alt="logoAppointMate" />
+
+      <form method="post" action="/index.php">
+        <input placeholder="Nombre" type="text" name="nombre" required />
+        <input
+          placeholder="Contraseña"
+          type="password"
+          name="password"
+          required
+        />
+        <a class="forgot" href="forgotP">¿Has olvidado la contraseña?</a>
+        <input
+          class="boton"
+          type="submit"
+          value="Login"
+          
+        />
+        <span
+          >¿Aún no tienes cuenta?
+          <a class="rojo" href="/registro.php">Registrate</a></span
+        >
+      </form>
+    </div>
+  </body>
+</html>

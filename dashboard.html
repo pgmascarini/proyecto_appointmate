@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css" /> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      
+      
+      img {
+        width: 350px;
+        margin-top: 100px;
+        align-self: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      .forgot {
+        margin-top: 10px;
+        text-align: right;
+        color: #2f2c79;
+        font-size: 15px;
+      }
+      span {
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .botonesArriba{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.btnIcon{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    background-color: #FF9800;
+    padding: 15px;
+    border-radius: 10px;
+}
+.cita{
+    margin-top: 20px;
+    width: 350px;
+    align-self: center;
+    height: 60px;
+    background-color: #FFCC50;
+    color: black;
+    font-weight: lighter;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.citasContainer{
+    margin-top: 0px;
+    
+}
+.icono{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    margin-top: 0px;
+}
+
+.iconos{
+    margin-top: 5px;
+}
+p{
+    font-size: 14px;
+    text-align: left;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.add{
+    border-radius: 10%;
+    border: none;
+    background-color: #2F2C79;
+    position: absolute;
+}
+.addIcon{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #2F2C79;
+    right: 0;
+    margin-right: 20px;
+    position: fixed;
+    margin-top: 100%;
+}
+
+      @media (min-width: 800px) {
+        body {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: row;
+        }
+        .container {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          max-height: 20%;
+        }
+        .home{
+        background-color: #2F2C79;
+        }
+        .containerHome{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        max-height: 90%;
+        max-width: 40%;
+        border-radius: 10px;
+        background-color: white;
+        }
+        .cita{
+        margin-top: 20px;
+        width: 70%;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+        background-color: #FFCC50;
+        color: black;
+        font-weight: lighter;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+        form {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          margin-top: 200px;
+        }
+        input {
+          width: 400px;
+          height: 20px;
+          border-radius: 15px;
+          margin-top: 10px;
+          padding: 10px;
+          border: 2px solid gray;
+          align-self: center;
+        }
+        
+        img {
+          width: 810px;
+          align-self: center;
+          margin-top: 20px;
+        }
+        a {
+          text-decoration: none;
+        }
+        
+        span {
+          margin-top: 50px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body class="home">
+    <div  class="containerHome">
+      <img style="max-width: 90%;" src="./medios/LOGO-ANGULARAPP.png" alt="logoAppointMate" />
+
+      <!-- botones arriba -->
+      <div class="botonesArriba">
+        <a href="calendario.html"><img class="btnIcon" src="./medios/calendarIcon.png" alt="Icono Calendario"/></img></a>
+        <a href="index.html"><img class="btnIcon" src="./medios/salirIcon.png" alt="Icono Salir"></img></a>
+      </div>
+      <div class="citas">
+
+        <a href=""><img id="pulsar" class="addIcon" src="./medios/plusIcon.png" alt="Añadir Cita"></a>
+
+        <!-- CITA -->
+        <div class="cita">
+          <span class="citasContainer"
+            ><p>Nombre: Dalia</p>
+            <p>Motivo: Porgramar App</p>
+            <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+          >
+          <div class="iconos">
+            <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+            <img class="icono" src="./medios/papelera.png" alt="icono" />
+          </div>
+        </div>
+        <!-- FIN CITA -->
+
+         <!-- CITA -->
+         <div class="cita">
+            <span class="citasContainer"
+              ><p>Nombre: Dalia</p>
+              <p>Motivo: Porgramar App</p>
+              <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+            >
+            <div class="iconos">
+              <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+              <img class="icono" src="./medios/papelera.png" alt="icono" />
+            </div>
+          </div>
+          <!-- FIN CITA -->
+
+           <!-- CITA -->
+        <div class="cita">
+            <span class="citasContainer"
+              ><p>Nombre: Dalia</p>
+              <p>Motivo: Porgramar App</p>
+              <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+            >
+            <div class="iconos">
+              <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+              <img class="icono" src="./medios/papelera.png" alt="icono" />
+            </div>
+          </div>
+          <!-- FIN CITA -->
+
+           <!-- CITA -->
+        <div class="cita">
+            <span class="citasContainer"
+              ><p>Nombre: Dalia</p>
+              <p>Motivo: Porgramar App</p>
+              <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+            >
+            <div class="iconos">
+              <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+              <img class="icono" src="./medios/papelera.png" alt="icono" />
+            </div>
+          </div>
+          <!-- FIN CITA -->
+
+           <!-- CITA -->
+        <div class="cita">
+            <span class="citasContainer"
+              ><p>Nombre: Dalia</p>
+              <p>Motivo: Porgramar App</p>
+              <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+            >
+            <div class="iconos">
+              <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+              <img class="icono" src="./medios/papelera.png" alt="icono" />
+            </div>
+          </div>
+          <!-- FIN CITA -->
+
+           <!-- CITA -->
+        <div class="cita">
+            <span class="citasContainer"
+              ><p>Nombre: Dalia</p>
+              <p>Motivo: Porgramar App</p>
+              <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+            >
+            <div class="iconos">
+              <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+              <img class="icono" src="./medios/papelera.png" alt="icono" />
+            </div>
+          </div>
+          <!-- FIN CITA -->
+
+          <!-- CITA -->
+        <div class="cita">
+          <span class="citasContainer"
+            ><p>Nombre: Dalia</p>
+            <p>Motivo: Porgramar App</p>
+            <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+          >
+          <div class="iconos">
+            <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+            <img class="icono" src="./medios/papelera.png" alt="icono" />
+          </div>
+        </div>
+        <!-- FIN CITA -->
+
+         <!-- CITA -->
+      <div class="cita">
+          <span class="citasContainer"
+            ><p>Nombre: Dalia</p>
+            <p>Motivo: Porgramar App</p>
+            <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+          >
+          <div class="iconos">
+            <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+            <img class="icono" src="./medios/papelera.png" alt="icono" />
+          </div>
+        </div>
+        <!-- FIN CITA -->
+
+         <!-- CITA -->
+      <div class="cita">
+          <span class="citasContainer"
+            ><p>Nombre: Dalia</p>
+            <p>Motivo: Porgramar App</p>
+            <p>Fecha y Hora: 15/06/2023 - 18:30</p></span
+          >
+          <div class="iconos">
+            <img style="background-color: #FF9800; " class="icono" src="./medios/editarIcon.png" alt="icono" />
+            <img class="icono" src="./medios/papelera.png" alt="icono" />
+          </div>
+        </div>
+        <!-- FIN CITA -->
+
+          
+      </div>
+    </div>
+  </body>
+</html>
